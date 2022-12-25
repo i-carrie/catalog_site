@@ -1,0 +1,192 @@
+// @use 'pages/common';
+
+/*=======  Common ==========*/
+body {
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  font-family: "Hiragino Kaku Gothic ProN";
+  color: #333;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin: 0px;
+}
+img {
+  max-width: 100%;
+  border-style: none;
+}
+dd {
+  margin: 0 0;
+}
+dl {
+  margin-top: 0;
+}
+
+
+/* ========= PC =============== */
+
+@media screen and (max-width: 1600px) {
+  header {
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 80px;
+    background-color: pink;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  #movie {
+    background-color: lightgray;
+    height:400px;  //仮設定
+   }
+   .title {
+    padding: 100px 0 30px;
+    text-align: center;
+    font-size: 36px;
+    color: #121212;
+  }
+  .carousel {
+    background-color: aquamarine;
+
+    .carl-pickup {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .pickup-pix {
+        padding-right: 60px;
+      }
+    }
+  }
+
+  .feature {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 26px;
+    row-gap: 26px;
+    margin-bottom: 60px;
+
+    .fea-pic {
+      transition: all 0.3s ease;
+      box-shadow: 0 0 8px 4px #ccc;
+    }
+
+  }
+
+  footer {
+    background-color: #000;
+    color: #fff;
+
+    .footer-title {
+      color: #fff;
+      padding-top: 50px;
+    }
+
+    .footer-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .footer-content {
+        width: 50%;
+
+        .text-line {
+          font-family: Meiryo;
+          font-size: 14px;
+          color: #fff;
+          opacity: 1;
+          width: 95%;
+          padding-left: 50px;
+        }
+        .two {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+
+      }
+      .footer-form {
+        width: 50%;
+        
+        dt, dd {
+          padding-left: 50px;
+        }
+
+        dd {
+          padding-bottom: 20px;
+        }
+
+        .last-dd {
+          padding-bottom: 0;
+        }
+
+        input {
+          width: 90%;
+          height: 50px;
+        }
+
+        textarea {
+          width: 90%;
+          height: 70px;
+        }
+
+        .button {
+          padding-left: 50px;
+
+          input {
+            width: 180px;
+            color: #fff;
+            border-style: solid;
+            border-color: #fff;
+            border-width: 1px;
+            background-color: #121212;
+            font-size: 14px;
+          }
+        }
+
+      }
+    }
+
+
+
+    .copyright {
+      text-align: center;
+      font-size: 12px;
+      padding: 60px 0 10px;
+      // padding-bottom: 10px;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+/* ========= mobile =============== */
+@media screen and (max-width: 900px) {
+
+
+}
