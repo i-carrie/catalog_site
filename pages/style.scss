@@ -42,18 +42,48 @@ dl {
 /* ========= PC =============== */
 
 @media screen and (max-width: 1600px) {
-  header {
-    margin-left: 40px;
-    margin-right: 40px;
-    line-height: 80px;
-    background-color: pink;
-    height: 80px;
+
+  #header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
 
+    #navi {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: -300px;
+      bottom: 0;
+      width: 300px;
+      color: #fff;
+      padding: 60px 25px;
+      background-color: #121212;
+      overflow-x: hidden;
+      overflow-y: auto;
+      transition: all .5s;
+      z-index: 20;
+      opacity: 0;
+    }
+
+    .toggle_btn {
+      display: block;
+      position: fixed;
+      top: 25px;
+      right: 45px;
+      width: 30px;
+      height: 30px;
+      transition: all .5s;
+      cursor: pointer;
+      z-index: 20;
+    }
   }
 
   #movie {
+    padding-top: 100px;
     background-color: lightgray;
     height:400px;  //仮設定
    }
@@ -64,7 +94,6 @@ dl {
     color: #121212;
   }
   .carousel {
-    background-color: aquamarine;
 
     .carl-pickup {
       display: flex;
@@ -89,6 +118,29 @@ dl {
     .fea-pic {
       transition: all 0.3s ease;
       box-shadow: 0 0 8px 4px #ccc;
+
+      .item-content {
+        display: block;
+        p {
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding: 0 30px;
+          color: #121212;
+          font-size: 12px;
+        }
+        .item-text {
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .item-date {
+          text-align: right;
+          padding-bottom: 26px;
+        }
+
+      }
     }
 
   }
@@ -166,13 +218,10 @@ dl {
       }
     }
 
-
-
     .copyright {
       text-align: center;
       font-size: 12px;
       padding: 60px 0 10px;
-      // padding-bottom: 10px;
     }
   }
 
