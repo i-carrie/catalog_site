@@ -139,10 +139,8 @@ dl {
           text-align: right;
           padding-bottom: 26px;
         }
-
       }
     }
-
   }
 
   footer {
@@ -214,7 +212,6 @@ dl {
             font-size: 14px;
           }
         }
-
       }
     }
 
@@ -224,18 +221,56 @@ dl {
       padding: 60px 0 10px;
     }
   }
-
-
 }
 
 
 
 
-
-
-
 /* ========= mobile =============== */
-@media screen and (max-width: 900px) {
+@media(max-width: 750px) {
 
+  #header {
+    padding: 20px 16px;
+  }
+
+  .feature {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  footer {
+    .footer-wrapper {
+      width: 100%;
+      display: block;
+      margin-bottom: 90px;
+
+      .footer-content {
+        width: 95%;  
+      }
+
+      .footer-form {
+        margin-top: 50px;
+        width: 100%;
+        input {
+          width: 93%;
+        }
+        textarea {
+          width: 93%;
+          margin-bottom: 20px;
+        }
+
+        .button {
+          width: 100%;
+          input {
+            width: 93%;
+          }
+        }
+
+      }
+    }
+    .copyright {
+      text-align: center;
+    }
+  }
 
 }
