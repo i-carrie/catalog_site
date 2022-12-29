@@ -93,19 +93,14 @@ dl {
     font-size: 36px;
     color: #121212;
   }
-  .carousel {
-
-    .carl-pickup {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-
-      .pickup-pix {
-        padding-right: 60px;
-      }
+  .swiper {
+    width: 100%;
+    height: auto;
+    .swiper-option {
+      visibility: hidden;
     }
   }
-
+    
   .feature {
     padding-left: 50px;
     padding-right: 50px;
@@ -227,7 +222,7 @@ dl {
 
 
 /* ========= mobile =============== */
-@media(max-width: 750px) {
+@media(max-width: 900px) {
 
   #header {
     padding: 20px 16px;
